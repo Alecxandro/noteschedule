@@ -19,3 +19,15 @@ This is a simple contact management system that allows you to add, edit, and del
 - Edit a contact
 - Delete a contact
 - Pagination
+
+## HOW TO RUN THE PROJECT
+
+1. Clone the repository
+2. Create a `.env` file in the root directory and add the following:
+    - `PORT=5000`
+    - `MONGODB_URI=your mongodb uri`
+3. Run `npm install` in the root directory to install the dependencies
+4. Run `npm run dev` in the root directory to start the server
+4. Run `npm run dev` in the frontend directory to start the client
+5. Go to http://localhost:5173/ in your browser
+
