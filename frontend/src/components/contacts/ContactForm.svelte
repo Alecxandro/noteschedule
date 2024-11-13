@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import api from '$lib/api';
 
     // @ts-ignore

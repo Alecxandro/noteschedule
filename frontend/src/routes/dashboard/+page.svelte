@@ -2,6 +2,7 @@
     import { auth } from '$lib/stores/authStore';
     import { goto } from '$app/navigation';
     import { onMount } from 'svelte';
+  import Navbar from '../../components/common/Navbar.svelte';
 
     onMount(() => {
         if (!$auth.isAuthenticated) {
@@ -12,13 +13,13 @@
 
 
 {#if $auth.isAuthenticated}
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<!----<nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">
         <div class="navbar-nav me-auto">
             <a class="nav-link" href="/dashboard">Dashboard</a>
             <a class="nav-link" href="/contacts">Contacts</a>
             <a class="nav-link" href="/notes">Notes</a>
-        </div>
+        </div> 
         <button 
             class="btn btn-danger" 
             on:click={() => {
@@ -29,8 +30,8 @@
             Logout
         </button>
     </div>
-</nav>
-
+</nav>-->
+<Navbar />
 <main class="container my-4">
     <slot />
 </main>

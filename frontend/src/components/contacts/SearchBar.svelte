@@ -3,6 +3,7 @@
     let searchTerm = '';
 
     function handleInput() {
+        // @ts-ignore
         onSearch(searchTerm);
     }
 </script>

@@ -5,6 +5,7 @@
     import ContactCard from '../../components/contacts/ContactCard.svelte';
     import Pagination from '../../components/common/Pagination.svelte';
     import SearchBar from '../../components/contacts/SearchBar.svelte';
+  import Navbar from '../../components/common/Navbar.svelte';
 
     let contacts = [];
     let filteredContacts = [];
@@ -82,7 +83,7 @@
         updateDisplayContacts();
     }
 </script>
-
+<Navbar />
 <div class="container">
     <h1 class="mb-4">Contacts</h1>
 
